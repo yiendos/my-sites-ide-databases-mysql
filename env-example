@@ -1,0 +1,9 @@
+# [mysql]
+# Defaults live in this plugin's .env. MYSQL_PORT is the host port only - sites in the IDE
+# always use mysql:3306. MYSQL_DATABASE/USER/PASSWORD apply to the first start, when
+# storage/plugins/mysql/data is empty. Run `php my-sites-ide databases:mysql-start` after changing any.
+#MYSQL_PORT=3306
+#MYSQL_DATABASE=default
+#MYSQL_USER=mysites
+#MYSQL_PASSWORD=mysites
+#SQL_MODE=ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
