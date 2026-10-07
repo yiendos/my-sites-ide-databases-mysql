@@ -1,0 +1,33 @@
+{
+    "name": "yiendos/my-sites-ide-databases-mysql",
+    "description": "MySQL database server for my-sites-ide",
+    "type": "my-sites-ide-plugin",
+    "license": "MIT",
+    "keywords": ["my-sites-ide", "mysql", "database"],
+    "authors": [
+        {
+            "name": "Paul Yiend",
+            "email": "yiendos@sbmatrix.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yiendos\\MySitesIde\\Databases\\Mysql\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "symfony/console": "^7.3"
+    },
+    "extra": {
+        "my-sites-ide": {
+            "commands": "src/Console",
+            "compose": "docker-compose.yml",
+            "env": ".env",
+            "env-example": "env-example",
+            "services": ["mysql"],
+            "autostart": true,
+            "storage": true
+        }
+    }
+}
